@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraRates.Api", "AuroraRates.Api\AuroraRates.Api.csproj", "{AA0523ED-2AF4-4B21-A0CD-4463D5BAE87C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraRates.Domain", "AuroraRates.Domain\AuroraRates.Domain.csproj", "{A3A0655C-58F7-4540-8A33-CF5E27C4A5FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraRates.DataAccess", "AuroraRates.DataAccess\AuroraRates.DataAccess.csproj", "{DC4EF1FA-A565-4BAA-BC6E-C35953F2B907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraRates.Application", "AuroraRates.Application\AuroraRates.Application.csproj", "{94F2C6CE-B02F-4956-BF5F-C2FFA9F2B6D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraRates.Infrastructure", "AuroraRates.Infrastructure\AuroraRates.Infrastructure.csproj", "{54CC7F29-5AE3-4C08-8989-7380C5177930}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0E01F2CA-8396-469A-BE43-29B5C80279EC}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA0523ED-2AF4-4B21-A0CD-4463D5BAE87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA0523ED-2AF4-4B21-A0CD-4463D5BAE87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA0523ED-2AF4-4B21-A0CD-4463D5BAE87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA0523ED-2AF4-4B21-A0CD-4463D5BAE87C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A0655C-58F7-4540-8A33-CF5E27C4A5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A0655C-58F7-4540-8A33-CF5E27C4A5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A0655C-58F7-4540-8A33-CF5E27C4A5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A0655C-58F7-4540-8A33-CF5E27C4A5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4EF1FA-A565-4BAA-BC6E-C35953F2B907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4EF1FA-A565-4BAA-BC6E-C35953F2B907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4EF1FA-A565-4BAA-BC6E-C35953F2B907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4EF1FA-A565-4BAA-BC6E-C35953F2B907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F2C6CE-B02F-4956-BF5F-C2FFA9F2B6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F2C6CE-B02F-4956-BF5F-C2FFA9F2B6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F2C6CE-B02F-4956-BF5F-C2FFA9F2B6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F2C6CE-B02F-4956-BF5F-C2FFA9F2B6D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CC7F29-5AE3-4C08-8989-7380C5177930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CC7F29-5AE3-4C08-8989-7380C5177930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CC7F29-5AE3-4C08-8989-7380C5177930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CC7F29-5AE3-4C08-8989-7380C5177930}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC9E37D3-7450-4447-A2B6-1CC5C265CDAB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,44 @@
+﻿services:
+  aurorarates.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE_URLS=http://+:8080;https://+:8081
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=Str0ng!Passw0rd123
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aurorarates.pfx
+    container_name: aurorarates.api
+    image: aurorarates.api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5062:8080"
+      - "7131:8081"
+    volumes:
+      - ~/.aspnet/https:/https:ro
+    depends_on:
+      - database
+
+  database  :
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: database
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Str0ng!Passw0rd123
+    volumes:
+      - ./sqlserver/data:/var/opt/mssql/data
+      - ./sqlserver/log:/var/opt/mssql/log
+        
+  aurorarates.client:
+    build: 
+      context: ../frontend
+      dockerfile: Dockerfile
+    image: aurorarates.client
+    container_name: aurorarates.client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - aurorarates.api
+      
+      
